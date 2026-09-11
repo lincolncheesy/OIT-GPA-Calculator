@@ -1,0 +1,6 @@
+{
+  "name": "GPA Calculator (3-Year OIT)",
+  "description": "GPA calculator for OIT students supporting 3-year curriculum modules, standard grading scales, and credit tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

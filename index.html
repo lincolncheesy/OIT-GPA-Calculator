@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GPA Calculator (3-Year OIT)</title>
+    <meta name="description" content="GPA calculator for OIT students supporting 3-year curriculum modules, standard grading scales, and credit tracking." />
+    <meta property="og:title" content="GPA Calculator (3-Year OIT)" />
+    <meta property="og:description" content="GPA calculator for OIT students supporting 3-year curriculum modules, standard grading scales, and credit tracking." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body class="bg-slate-50 text-slate-900 min-h-screen flex flex-col font-sans antialiased">
+    <!-- Header -->
+    <header id="app-header" class="bg-slate-900 text-white border-b border-slate-800"></header>
+
+    <!-- Main Content -->
+    <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
+      <!-- GPA Summary Card -->
+      <div id="gpa-summary-container"></div>
+
+      <!-- Curriculum Category Breakdown -->
+      <div id="category-breakdown-container"></div>
+
+      <!-- Modules Table Toolbar & Grid -->
+      <div id="modules-table-container"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-auto py-6 border-t border-slate-200 bg-white text-center text-xs text-slate-500">
+      <div class="max-w-7xl mx-auto px-4">
+        Official 3-Year OIT Curriculum Benchmark • 96 Credit Units Total • Built with HTML, CSS &amp; JavaScript
+      </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="formula-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/70 backdrop-blur-xs overflow-y-auto hidden">
+      <div id="formula-modal-content" class="relative w-full max-w-2xl bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden my-8"></div>
+    </div>
+
+    <div id="target-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/70 backdrop-blur-xs overflow-y-auto hidden">
+      <div id="target-modal-content" class="relative w-full max-w-lg bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden my-8"></div>
+    </div>
+
+    <div id="add-module-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/70 backdrop-blur-xs overflow-y-auto hidden">
+      <div id="add-module-modal-content" class="relative w-full max-w-md bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden my-8"></div>
+    </div>
+
+    <!-- Application Script -->
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
