@@ -3,6 +3,7 @@ import { defineConfig } from 'vite';
 
 export default defineConfig(() => {
   return {
+    base: '/OIT-GPA-Calculator/',
     plugins: [tailwindcss()],
     server: {
       hmr: process.env.DISABLE_HMR !== 'true',
