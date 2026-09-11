@@ -5,9 +5,5 @@ export default defineConfig(() => {
   return {
     base: '/OIT-GPA-Calculator/',
     plugins: [tailwindcss()],
-    server: {
-      hmr: process.env.DISABLE_HMR !== 'true',
-      watch: process.env.DISABLE_HMR === 'true' ? null : {},
-    },
   };
 });
